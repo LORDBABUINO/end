@@ -22,7 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-import ninja.soumuito.end.R;
+import ninja.soumuito.projetofinal.R;
 
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
