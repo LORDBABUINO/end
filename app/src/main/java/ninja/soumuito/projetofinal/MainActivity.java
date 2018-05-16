@@ -1,6 +1,7 @@
 package ninja.soumuito.projetofinal;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.lang.reflect.Array;
 import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +41,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button lostPass =  findViewById(R.id.maps_btn);
+        lostPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent lostPass = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(lostPass);     }
+        });
+
+
     }
+
+
+
+
 
     public void wirete() {
 
@@ -50,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         EditText curso = findViewById(R.id.curso);
         EditText campus = findViewById(R.id.campus);
         EditText interesses = findViewById(R.id.interesses);
-        EditText data_nsc = findViewById(R.id.data_nsc);
+
 
 
         Perfil alunos = new Perfil();
