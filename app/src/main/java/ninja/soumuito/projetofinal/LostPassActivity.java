@@ -39,7 +39,7 @@ public class LostPassActivity extends AppCompatActivity {
                 String email = inputEmail.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "Digite seu e-mail de ID cadastrado", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -49,9 +49,9 @@ public class LostPassActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(LostPassActivity.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LostPassActivity.this, "Nós lhe enviamos instruções para redefinir sua senha!", Toast.LENGTH_SHORT).show();
                                 } else {
-                                    Toast.makeText(LostPassActivity.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LostPassActivity.this, "Falha ao enviar e-mail redefinido!", Toast.LENGTH_SHORT).show();
                                 }
 
 
