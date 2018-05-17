@@ -41,14 +41,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button lostPass =  findViewById(R.id.maps_btn);
-        lostPass.setOnClickListener(new View.OnClickListener() {
+        Button mpas =  findViewById(R.id.maps_btn);
+        mpas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent lostPass = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(lostPass);     }
         });
 
+
+        Button chat =  findViewById(R.id.chat_btn);
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent lostPass = new Intent(MainActivity.this, ChatActivity.class);
+                startActivity(lostPass);     }
+        });
 
     }
 

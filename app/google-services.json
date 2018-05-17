@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "531481699822-rvllabkl716qi4msimtdfjrfnuluqmtk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.soumuito.projetofinal",
+            "certificate_hash": "cdc65cb901cd8cc3c9a24e0f78ce056789dcb1e9"
+          }
+        },
+        {
           "client_id": "531481699822-unarpipvdvsbojdneh2ghhmeo9ea7a58.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531481699822-unarpipvdvsbojdneh2ghhmeo9ea7a58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
