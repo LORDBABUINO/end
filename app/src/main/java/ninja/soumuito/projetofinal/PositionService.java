@@ -4,12 +4,13 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 public interface PositionService {
 
-    @GET("https://jobs.github.com/positions.json")
+    @GET("/positions.json")
     Call<List<Position>> listPositions();
 
-    @GET("https://jobs.github.com/positions.json")
-    Call<List<Position>> getPosition();
+    @GET("/positions/{id}.json")
+    Call<Position> getPosition(@Path("id") String id);
 }
