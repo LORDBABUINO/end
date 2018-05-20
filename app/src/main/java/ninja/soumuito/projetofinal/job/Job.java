@@ -1,6 +1,6 @@
-package ninja.soumuito.projetofinal;
+package ninja.soumuito.projetofinal.job;
 
-public class Position {
+public class Job {
 
     //Attributes
 
@@ -16,7 +16,7 @@ public class Position {
 
     //Constructor
 
-    public Position(String title, String location, String type, String company, String url) {
+    public Job(String title, String location, String type, String company, String url) {
         this.title = title;
         this.location = location;
         this.type = type;
@@ -97,6 +97,4 @@ public class Position {
     public void setUrl(String url) {
         this.url = url;
     }
-
-
 }
