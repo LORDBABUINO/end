@@ -41,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        Button button_pesquisar = findViewById(R.id.button_pesquisar);
+        button_pesquisar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Pesquisar = new Intent (MainActivity.this,Pesquisar.class);
+                startActivity(Pesquisar);  } });
+
         Button mpas =  findViewById(R.id.maps_btn);
         mpas.setOnClickListener(new View.OnClickListener() {
             @Override
