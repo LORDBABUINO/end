@@ -30,7 +30,7 @@ public class MessageAdapter extends FirebaseListAdapter<ChatMessage> {
         messageTime.setText(DateFormat.format("dd-MM-yyyy (HH:mm:ss)", model.getMessageTime()));
     }
 
-    /*@Override
+    @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         ChatMessage chatMessage = getItem(position);
         if (chatMessage.getMessageUserId().equals(activity.getLoggedInUserName()))
@@ -55,5 +55,5 @@ public class MessageAdapter extends FirebaseListAdapter<ChatMessage> {
     public int getItemViewType(int position) {
         // return a value between 0 and (getViewTypeCount - 1)
         return position % 2;
-    }*/
+    }
 }

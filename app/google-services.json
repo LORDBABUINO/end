@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "531481699822-s1q7o6vfmuke86lu0of4fcscpbipsuek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.soumuito.projetofinal",
+            "certificate_hash": "8b11e36d59d8067f5ef3ed5680544008686d6be0"
+          }
+        },
+        {
           "client_id": "531481699822-rvllabkl716qi4msimtdfjrfnuluqmtk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

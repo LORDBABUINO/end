@@ -36,6 +36,13 @@ public class ChatActivity extends AppCompatActivity {
         final EditText input = (EditText) findViewById(R.id.input);
         listView = (ListView) findViewById(R.id.list);
 
+        if(FirebaseAuth.getInstance().getCurrentUser() == null) {
+            startActivityForResult(AuthUI.getInstance()
+                .createSignInIntentBuilder()
+                .build(), SIGN_IN_REQUEST_CODE);
+        } else {
+            loggedInUserName();
+        }
 
 
         fab.setOnClickListener(new View.OnClickListener() {
