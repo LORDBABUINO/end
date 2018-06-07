@@ -34,7 +34,7 @@
         <activity android:name=".ChatActivity" />
         <activity android:name=".ChatMessage" />
         <activity android:name=".MessageAdapter" />
-
+        <activity android:name=".Pesquisar"></activity>
     </application>
 
 </manifest>
